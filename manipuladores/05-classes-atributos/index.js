@@ -24,4 +24,8 @@ $(function () {
       $("input").attr("checked", "checked");
     }
   });
+
+  $("p").on("click", function () {
+    $(this).parents().toggleClass(".active");
+  });
 });
